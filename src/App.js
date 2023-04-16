@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Clock from './Clock';
+import PokeDex from './PokeDex';
+import ToDo from './ToDo';
+import TrafficLight from './TrafficLight';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PokeDex></PokeDex>
+      {/* <div className='todo-list'>
+        <ToDo></ToDo>
+      </div> */}
+      {/* <div>
+        <TrafficLight></TrafficLight>
+      </div>
+      <div>
+        <Clock></Clock>
+      </div> */}
     </div>
   );
 }
