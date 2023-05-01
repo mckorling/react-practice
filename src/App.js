@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import './App.css';
-import Carousel from './imagecarousel/Carousel';
-import slides from '../src/imagecarousel/data/carouselData.json'
+// import Card from './cardscroll/Card';
+// import CardListInfinite from './cardscroll/CardListInfinite';
+// import { SkeletonTheme } from 'react-loading-skeleton';
+// // import Carousel from './imagecarousel/Carousel';
+// import slides from '../src/imagecarousel/data/carouselData.json'
 // import Clock from './Clock';
 // import CountrySelect from './CountrySelect';
 // import CreateAppForm from './CreateForm';
@@ -12,11 +15,17 @@ import slides from '../src/imagecarousel/data/carouselData.json'
 // import SearchResultsList from './searchbar/SearchResultsList';
 
 function App() {
-  const [results, setResults] = useState([]);
+  // const [results, setResults] = useState([]); // search bar
 
   return (
     <div className="App">
-      <Carousel data={slides.slides} />
+
+      {/* Skeleton doesn't have correct layout in list */}
+      {/* <SkeletonTheme baseColor="#9a9c9a" highlightColor="#c0c2c1">
+        <CardListInfinite />
+      </SkeletonTheme> */}
+      
+      {/* <Carousel data={slides.slides} /> */}
       {/* <SearchBar setResults={setResults} />
       <SearchResultsList results={results} /> */}
       {/* <CreateAppForm></CreateAppForm>
